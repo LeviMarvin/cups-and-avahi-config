@@ -1,0 +1,64 @@
+# Subscription configuration file for CUPS v2.4.10
+# Written by cupsd
+NextSubscriptionId 35
+<Subscription 1>
+Events printer-changed
+Owner cups-browsed
+LeaseDuration 86400
+Interval 60
+ExpirationTime 1719932450
+NextEventId 213
+</Subscription>
+<Subscription 2>
+Events all
+Owner anonymous
+Recipient dbus://
+LeaseDuration 86400
+Interval 0
+ExpirationTime 1719932450
+NextEventId 441
+</Subscription>
+<Subscription 3>
+Events printer-state-changed printer-restarted printer-shutdown printer-stopped printer-added printer-deleted job-state-changed job-created job-completed job-stopped
+Owner ubuntu
+Recipient dbus://
+LeaseDuration 3600
+Interval 0
+ExpirationTime 1719849663
+NextEventId 225
+</Subscription>
+<Subscription 7>
+Events printer-state-changed printer-restarted printer-shutdown printer-stopped printer-added printer-deleted printer-modified job-state-changed job-created job-completed job-stopped job-config-changed job-progress server-restarted server-started server-stopped server-audit
+Owner levi
+Recipient dbus://
+LeaseDuration 3600
+Interval 0
+ExpirationTime 1719851292
+NextEventId 326
+</Subscription>
+<Subscription 20>
+Events printer-changed
+Owner root
+LeaseDuration 86400
+Interval 60
+ExpirationTime 1719934526
+NextEventId 139
+</Subscription>
+<Subscription 21>
+Events all
+Owner anonymous
+Recipient dbus://
+LeaseDuration 86400
+Interval 0
+ExpirationTime 1719934526
+NextEventId 270
+</Subscription>
+<Subscription 34>
+Events printer-state-changed printer-restarted printer-shutdown printer-stopped printer-added printer-deleted printer-modified server-restarted server-started server-stopped server-audit
+Owner levi
+Recipient dbus://
+LeaseDuration 3600
+Interval 0
+ExpirationTime 1719852674
+NextEventId 31
+</Subscription>
